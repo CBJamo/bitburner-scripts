@@ -9,7 +9,7 @@
 
 		"daemon/intel.js"
 	],
-	"exe":
+	"run":
 	[
 		{
 			"name": "intel.js",
