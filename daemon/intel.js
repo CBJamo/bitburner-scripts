@@ -1,4 +1,5 @@
-import {ports, spider} from "functions.js";
+import {spider} from "network.js";
+import {ports} from "hack.js";
 
 class Player
 {
