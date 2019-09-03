@@ -13,8 +13,8 @@ export async function main(ns)
 
 	for( let file of files )
 	{
-		if( !file.includes("*.exe") && !file.indludes(".msg")
-		ns.rm( file, hostname );
+		if( !file.includes("*.exe") && !file.indludes(".msg") )
+			ns.rm( file, hostname );
 	}
 
 	await ns.wget(url('inf/deploy.json'), 'deploy.txt');
