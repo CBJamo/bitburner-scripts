@@ -4,8 +4,11 @@
 		"inf/launcher.js",
 		"inf/pull.js",
 
-		"lib/functions.js",
-		"lib/portReader.js",
+		"lib/network.js",
+		"lib/process.js",
+		"lib/hack.js",
+
+		"run/readPort.js",
 
 		"daemon/intel.js"
 	],
