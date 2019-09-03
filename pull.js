@@ -8,7 +8,7 @@ async function get(ns, path)
 
 export async function main(ns)
 {
-	let files = ['pull.js', 'launcher.js', 'start.js'];
+	let files = ['launcher.js', 'start.js'];
 	for (let i in files)
 	{
 		await get(ns, files[i]);
