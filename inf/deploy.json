@@ -7,6 +7,7 @@
 		"lib/network.js",
 		"lib/process.js",
 		"lib/hack.js",
+		"lib/files.js",
 
 		"run/readPort.js",
 

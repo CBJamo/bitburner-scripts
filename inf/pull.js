@@ -1,4 +1,4 @@
-let baseUrl = 'https://raw.githubusercontent.com/CBJamo/bitburner-scripts/blob/master/';
+let baseUrl = 'https://raw.githubusercontent.com/CBJamo/bitburner-scripts/master/';
 let url = path => `${baseUrl}${path}`;
 
 async function get(ns, path)
@@ -9,7 +9,13 @@ async function get(ns, path)
 export async function main(ns)
 {
 	let hostname = ns.getHostname();
-	cleanHost( ns, hostname );
+	let files = ls( hostname );
+
+	for( let file of files )
+	{
+		if( !file.includes("*.exe") && !file.indludes(".msg")
+		ns.rm( file, hostname );
+	}
 
 	await ns.wget(url('inf/deploy.json'), 'deploy.txt');
 	let deploy = JSON.parse( ns.read('deploy.txt') );
