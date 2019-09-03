@@ -13,7 +13,7 @@ export async function main(ns)
 
 	for( let file of files )
 	{
-		if( !file.includes("*.exe") && !file.includes(".msg") )
+		if( !file.includes(".exe") && !file.includes(".msg") )
 			ns.rm( file, hostname );
 	}
 
