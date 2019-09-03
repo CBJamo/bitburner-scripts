@@ -1,6 +1,9 @@
 export async function main( ns )
 {
-	let args = ['Hello', 'World'];
+	let deploy = JSON.parse( ns.read('deploy.txt') );
 
-	ns.run( 'start.js', 1, ...args );
+	for( exe of deploy.run )
+	{
+		ns.run( exe.name, exe.threads, exe.args... );
+	}
 }

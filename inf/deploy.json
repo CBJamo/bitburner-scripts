@@ -1,0 +1,20 @@
+{
+	"files":
+	[
+		"inf/launcher.js",
+		"inf/pull.js",
+
+		"lib/functions.js",
+		"lib/portReader.js",
+
+		"daemon/intel.js"
+	],
+	"exe":
+	[
+		{
+			"name": "intel.js",
+			"threads": 1,
+			"args": [""]
+		}
+	]
+}

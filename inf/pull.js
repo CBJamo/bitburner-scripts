@@ -8,10 +8,11 @@ async function get(ns, path)
 
 export async function main(ns)
 {
-	let files = ['launcher.js', 'start.js'];
-	for (let i in files)
+	await ns.wget(url('deploy.json'), 'deploy.txt');
+	let deploy = JSON.parse( ns.read('deploy.txt');
+	for (let i of deploy.files)
 	{
-		await get(ns, files[i]);
+		await get(ns, i);
 	}
 	ns.tprint('<span style="color:white">Done updating!</span>');
 
