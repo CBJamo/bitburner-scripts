@@ -4,6 +4,6 @@ export async function main( ns )
 
 	for( exe of deploy.run )
 	{
-		ns.run( exe.name, exe.threads, exe.args... );
+		ns.run( exe.name, exe.threads, ...exe.args);
 	}
 }

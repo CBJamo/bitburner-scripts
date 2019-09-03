@@ -8,7 +8,7 @@ async function get(ns, path)
 
 export async function main(ns)
 {
-	await ns.wget(url('deploy.json'), 'deploy.txt');
+	await ns.wget(url('inf/deploy.json'), 'deploy.txt');
 	let deploy = JSON.parse( ns.read('deploy.txt');
 	for (let i of deploy.files)
 	{
