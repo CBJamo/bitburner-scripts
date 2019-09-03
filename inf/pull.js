@@ -1,4 +1,4 @@
-let baseUrl = 'https://raw.githubusercontent.com/CBJamo/bitburner-scripts/master/';
+let baseUrl = 'https://raw.githubusercontent.com/CBJamo/bitburner-scripts/blob/master/';
 let url = path => `${baseUrl}${path}`;
 
 async function get(ns, path)
