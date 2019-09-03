@@ -9,11 +9,11 @@ async function get(ns, path)
 export async function main(ns)
 {
 	let hostname = ns.getHostname();
-	let files = ls( hostname );
+	let files = ns.ls( hostname );
 
 	for( let file of files )
 	{
-		if( !file.includes("*.exe") && !file.indludes(".msg") )
+		if( !file.includes("*.exe") && !file.includes(".msg") )
 			ns.rm( file, hostname );
 	}
 
